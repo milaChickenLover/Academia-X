@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Noticias con Estilos CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100%;
+        }
+
+        header {
+            height: 120px;
+            background-color: rgb(50, 200, 241);
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        main {
+            background-color: rgb(239, 239, 239);
+            margin: 0;
+            padding: 20px 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .noticia {
+            height: 480px;
+            width: 300px;
+            margin: 50px;
+            background-color: white;
+            box-shadow: 2px 2px 6px rgba(181, 181, 181, 0.5);
+            border-radius: 4px;
+            overflow: hidden;
+            /* position: relative; */
+            transition: transform 0.5s ease;
+
+            img {
+                height: 300px;
+            }
+        }
+
+        .card-texto {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .parrafo-oculto {
+            font-size: 12px;
+            margin-top: -15px;
+            color: transparent;
+            transition: color 0.5s ease;
+        }
+
+        .noticia:hover {
+            cursor: pointer;
+            transition: transform 0.5s ease;
+            transform: translateY(-20px);
+        }
+
+        .card-texto:hover {
+            background-color: rgb(225, 224, 224);
+
+            .noticia-titulo {
+                color: orange;
+            }
+
+            .parrafo-oculto {
+                transition: color 0.5s ease;
+                color: black;
+            }
+        }
+
+        .fondo-sun {
+            overflow: hidden;
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            height: 102px;
+            width: 800px;
+        }
+
+        .sun {
+            width: auto;
+            background-color: yellow;
+            border-radius: 50%;
+            height: 100px;
+            aspect-ratio: 1 / 1;
+            /*
+                animations declared later in the cascade will override the
+                properties of previously declared animations
+            */
+            /* bounce 'overwrites' the transform set by rise, hence the sun only moves horizontally */
+            animation:
+                4s linear 0s infinite alternate rise,
+                4s linear 0s infinite alternate bounce;
+        }
+
+        /* @keyframes rise {
+            from {
+                transform: translateY(110vh);
+            }
+
+            to {
+                transform: translateY(0);
+            }
+        } */
+
+        @keyframes bounce {
+            from {
+                transform: translateX(-50vw);
+            }
+
+            to {
+                transform: translateX(50vw);
+            }
+        }
+
+        .animacion {
+            height: 100px;
+            width: 100px;
+            background-color: coral;
+            border-radius: 50%;
+            animation: mover 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes mover {
+            from {
+                transform: translateY(-100px);
+            }
+
+            to {
+                transform: translateY(100px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Últimas Noticias</h1>
+    </header>
+    <main>
+        <div class="noticia">
+            <img src="https://cdn2.mediotiempo.com/uploads/media/2020/02/26/noticias-deportivas-en-los-periodicos-13.jpg"
+                alt="Noticia 1">
+            <div class="card-texto">
+                <h2 class="noticia-titulo">Noticia 1</h2>
+                <p class="parrafo-descripcion">Descripción de la noticia 1.</p>
+                <p class="parrafo-autor">Autor: John Doe</p>
+                <p class="parrafo-oculto">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="noticia">
+            <img src="https://cdn2.mediotiempo.com/uploads/media/2020/02/26/noticias-deportivas-en-los-periodicos-13.jpg"
+                alt="Noticia 2">
+            <div class="card-texto">
+                <h2 class="noticia-titulo">Noticia 2</h2>
+                <p class="parrafo-descripcion">Descripción de la noticia 2.</p>
+                <p class="parrafo-autor">Autor: Mary Jane</p>
+                <p class="parrafo-oculto">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="noticia">
+            <img src="https://cdn2.mediotiempo.com/uploads/media/2020/02/26/noticias-deportivas-en-los-periodicos-13.jpg"
+                alt="Noticia 3">
+            <div class="card-texto">
+                <h2 class="noticia-titulo">Noticia 3</h2>
+                <p class="parrafo-descripcion">Descripción de la noticia 3.</p>
+                <p class="parrafo-autor">Autor: Michael Jackson</p>
+                <p class="parrafo-oculto">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="fondo-sun">
+            <div class="sun"></div>
+        </div>
+        <div class="animacion"></div>
+    </main>
+</body>
+
+</html>

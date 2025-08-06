@@ -1,0 +1,21 @@
+let numero1 = 10;
+let numero2 = 5;
+let numero3 = 1;
+let numero4 = 2;
+let texto1 = "Hola";
+let texto2 = "Mundo";
+let objeto1 = { pais: "Perú", ciudad: "Lima" };
+let objeto2 = { pais: "Perú", ciudad: "Lima" };
+
+console.log(`¿El número ${numero1} es mayor que el número ${numero2}? ${numero1 > numero2}`);
+console.log(`¿El número ${numero1} es menor que el número ${numero2}? ${numero1 < numero2}`);
+console.log(`¿El número ${numero3} es igual al número ${numero4}? ${numero3 === numero4}`);
+console.log(`¿El texto 1 es igual al texto 2? ${texto1 === texto2}`);
+console.log(`¿Los objetos son iguales? ${objeto1 === objeto2}`);
+console.log("AND lógico:", true && false);
+console.log("OR lógico:", false || true);
+console.log("La suma de 10 + 3:", 10 + 3);
+console.log("La resta de 10 + 3:", 10 - 3);
+console.log("La multiplicación de 10 * 3:", 10 * 3);
+console.log("La división de 10 / 3:", 10 / 3);
+console.log("10 módulo de 3:", 10 % 3);

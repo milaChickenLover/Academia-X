@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* PRO TIP 👉 En lugar de utilizar métodos obsoletos como tablas o ajustes de 
+        margen para centrar elementos, usa Flexbox o Grid en CSS. 
+        Específicamente, la propiedad "justify-content: center" en Flexbox o 
+        "place-items: center" en Grid serán tus aliados para un centrado eficaz y moderno. */
+        #centrar-texto {
+            text-align: center;            
+        }
+        .cuadrado-rojo {
+            background: red;
+            height: 10px;
+            width: 10px;
+            border: 2px solid black;
+        }
+        #centrar-con-margen {
+            margin: 0 auto;
+        }
+        #centrar-con-flexbox {
+            display: flex;
+            justify-content: center;
+        }
+        #centrar-con-transform {
+            position: relative; /* o absolute, o fixed */
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .centrar-vertical-horizontal {
+            width: 200px;
+            height: 200px;
+            background-color: #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="centrar-texto">Texto</p>
+    <div id="centrar-con-margen" class="cuadrado-rojo"></div>
+    <div id="centrar-con-flexbox">
+        <div class="cuadrado-rojo"></div>
+    </div>
+    <div id="centrar-con-transform" class="cuadrado-rojo"></div>
+    <div class="centrar-vertical-horizontal"></div>
+</body>
+
+</html>

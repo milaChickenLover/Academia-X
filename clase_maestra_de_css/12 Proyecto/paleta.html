@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paleta</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            width: 100%;
+            background-color: rgb(216, 216, 216);
+        }
+        h1 {
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3em;
+        }
+        main {
+            padding: 20px 0;
+        }
+        .colores {
+            display: grid;
+            grid-template-rows: 100px 100px 100px 100px;
+            grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+        }
+        .colores div p {
+            font-family: Arial, sans-serif;
+            font-size: 1em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100px;
+            color: transparent;
+            cursor: pointer;
+            transition: .3s ease-in-out;
+        }
+        .colores div p:hover {
+            color: black;
+        }
+        .colores-ultima-fila {
+            display: grid;
+            grid-template-rows: 100px;
+            grid-template-columns: auto auto auto auto;
+        }
+        .colores-ultima-fila div p {
+            font-family: Arial, sans-serif;
+            font-size: 1em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            color: transparent;
+            cursor: pointer;
+            transition: .3s ease-in-out;
+        }
+        .colores-ultima-fila div p:hover {
+            color: black;
+        }
+        .color1 {
+            background-color: #ff667c;
+        }
+        .color2 {
+            background-color: #fbbaa4;
+        }
+        .color3 {
+            background-color: #f9e5c0;
+        }
+        .color4 {
+            background-color: #5b3841;
+        }
+        .color5 {
+            background-color: #2c171c;
+        }
+        .color6 {
+            background-color: #9ec978;
+        }
+        .color7 {
+            background-color: #b6d0a0;
+        }
+        .color8 {
+            background-color: #dbafb6;
+        }
+        .color9 {
+            background-color: #ff66bd;
+        }
+        .color10 {
+            background-color: #fb8cf7;
+        }
+        .color11 {
+            background-color: #bf57eb;
+        }
+        .color12 {
+            background-color: #667fff;
+        }
+        .color13 {
+            background-color: #fa7488;
+        }
+        .color14 {
+            background-color: #f6bfad;
+        }
+        .color15 {
+            background-color: #f5e6ca;
+        }
+        .color16 {
+            background-color: #574146;
+        }
+        .color17 {
+            background-color: #36292c;
+        }
+        .color18 {
+            background-color: #a5c48b;
+        }
+        .color19 {
+            background-color: #becfaf;
+        }
+        .color20 {
+            background-color: #d8c3c6;
+        }
+        .color21 {
+            background-color: #fa87c9;
+        }
+        .color22 {
+            background-color: #f8aef6;
+        }
+        .color23 {
+            background-color: #c679e8;
+        }
+        .color24 {
+            background-color: #7f93f9;
+        }
+        .color25 {
+            background-color: #f991a1;
+        }
+        .color26 {
+            background-color: #f9d5c8;
+        }
+        .color27 {
+            background-color: #f8edda;
+        }
+        .color28 {
+            background-color: #56484b;
+        }
+        .color29 {
+            background-color: #3b3637;
+        }
+        .color30 {
+            background-color: #b2c6a1;
+        }
+        .color31 {
+            background-color: #bfcbb4;
+        }
+        .color32 {
+            background-color: #d9c5c9;
+        }
+        .color33 {
+            background-color: #f8acd7;
+        }
+        .color34 {
+            background-color: #f9bef7;
+        }
+        .color35 {
+            background-color: #d198e9;
+        }
+        .color36 {
+            background-color: #9cadff;
+        }
+        .color37 {
+            background-color: #f9b6c0;
+        }
+        .color38 {
+            background-color: #f9e7e0;
+        }
+        .color39 {
+            background-color: #fcf7ec;
+        }
+        .color40 {
+            background-color: #655f61;
+        }
+        .color41 {
+            background-color: #4b4647;
+        }
+        .color42 {
+            background-color: #b7c7aa;
+        }
+        .color43 {
+            background-color: #c5cfbc;
+        }
+        .color44 {
+            background-color: #dacbce;
+        }
+        .color45 {
+            background-color: #fab1da;
+        }
+        .color46 {
+            background-color: #f8cff7;
+        }
+        .color47 {
+            background-color: #d19fe6;
+        }
+        .color48 {
+            background-color: #b5c1fb;
+        }
+        .color49 {
+            background-color: #f2f1f1;
+        }
+        .color50 {
+            background-color: #d9d9d9;
+        }
+        .color51 {
+            background-color: #adadad;
+        }
+        .color52 {
+            background-color: #696969;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Paleta</h1>
+    </header>
+    <hr>
+     <main>
+        <div class="colores">
+            <!-- div.color$*52>p -->
+            <div class="color1">
+                <p>#ff667c</p>
+            </div>
+            <div class="color2">
+                <p>#fbbaa4</p>
+            </div>
+            <div class="color3">
+                <p>#f9e5c0</p>
+            </div>
+            <div class="color4">
+                <p>#5b3841</p>
+            </div>
+            <div class="color5">
+                <p>#2c171c</p>
+            </div>
+            <div class="color6">
+                <p>#9ec978</p>
+            </div>
+            <div class="color7">
+                <p>#b6d0a0</p>
+            </div>
+            <div class="color8">
+                <p>#dbafb6</p>
+            </div>
+            <div class="color9">
+                <p>#ff66bd</p>
+            </div>
+            <div class="color10">
+                <p>#fb8cf7</p>
+            </div>
+            <div class="color11">
+                <p>#bf57eb</p>
+            </div>
+            <div class="color12">
+                <p>#667fff</p>
+            </div>
+            <div class="color13">
+                <p>#fa7488</p>
+            </div>
+            <div class="color14">
+                <p>#f6bfad</p>
+            </div>
+            <div class="color15">
+                <p>#f5e6ca</p>
+            </div>
+            <div class="color16">
+                <p>#574146</p>
+            </div>
+            <div class="color17">
+                <p>#36292c</p>
+            </div>
+            <div class="color18">
+                <p>#a5c48b</p>
+            </div>
+            <div class="color19">
+                <p>#becfaf</p>
+            </div>
+            <div class="color20">
+                <p>#d8c3c6</p>
+            </div>
+            <div class="color21">
+                <p>#fa87c9</p>
+            </div>
+            <div class="color22">
+                <p>#f8aef6</p>
+            </div>
+            <div class="color23">
+                <p>#c679e8</p>
+            </div>
+            <div class="color24">
+                <p>#7f93f9</p>
+            </div>
+            <div class="color25">
+                <p>#f991a1</p>
+            </div>
+            <div class="color26">
+                <p>#f9d5c8</p>
+            </div>
+            <div class="color27">
+                <p>#f8edda</p>
+            </div>
+            <div class="color28">
+                <p>#56484b</p>
+            </div>
+            <div class="color29">
+                <p>#3b3637</p>
+            </div>
+            <div class="color30">
+                <p>#b2c6a1</p>
+            </div>
+            <div class="color31">
+                <p>#bfcbb4</p>
+            </div>
+            <div class="color32">
+                <p>#d9c5c9</p>
+            </div>
+            <div class="color33">
+                <p>#f8acd7</p>
+            </div>
+            <div class="color34">
+                <p>#f9bef7</p>
+            </div>
+            <div class="color35">
+                <p>#d198e9</p>
+            </div>
+            <div class="color36">
+                <p>#9cadff</p>
+            </div>
+            <div class="color37">
+                <p>#f9b6c0</p>
+            </div>
+            <div class="color38">
+                <p>#f9e7e0</p>
+            </div>
+            <div class="color39">
+                <p>#fcf7ec</p>
+            </div>
+            <div class="color40">
+                <p>#655f61</p>
+            </div>
+            <div class="color41">
+                <p>#4b4647</p>
+            </div>
+            <div class="color42">
+                <p>#b7c7aa</p>
+            </div>
+            <div class="color43">
+                <p>#c5cfbc</p>
+            </div>
+            <div class="color44">
+                <p>#dacbce</p>
+            </div>
+            <div class="color45">
+                <p>#fab1da</p>
+            </div>
+            <div class="color46">
+                <p>#f8cff7</p>
+            </div>
+            <div class="color47">
+                <p>#d19fe6</p>
+            </div>
+            <div class="color48">
+                <p>#b5c1fb</p>
+            </div>
+        </div>
+        <div class="colores-ultima-fila">
+            <div class="color49">
+                <p>#f2f1f1</p>
+            </div>
+            <div class="color50">
+                <p>#d9d9d9</p>
+            </div>
+            <div class="color51">
+                <p>#adadad</p>
+            </div>
+            <div class="color52">
+                <p>#696969</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

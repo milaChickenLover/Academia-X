@@ -1,0 +1,48 @@
+:root {
+    --primary:rgb(0, 195, 255);
+    --primary-dark: rgb(0, 195, 255);
+    --secondary:hsl(25, 99%, 63%);
+    --secondary-dark: hsl(25, 99%, 60%);
+    --white:#f5f9fa;
+    --white2: #ebf3f5;
+    --gray:#e1e4e5;
+    --gray2:#c0c6c9;
+    --gray3:#4b4c4d;
+    --black:#323333;
+    --black2:#2a2b2b;
+}
+
+/* Fonts */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--gray3);
+    text-align: center;
+    font-size: 14px;
+}
+
+header,
+footer,
+section.even {
+    color: var(--white);
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h2, h3, h4 {
+    letter-spacing: 0.3rem;
+}
+
+h1, h3 {
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+/* Utils */
+.circle {
+    border-radius: 50%;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page de Productos de Comida</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgb(255, 47, 0);
+            display: grid;
+            grid-template-rows: 120px auto 30px;
+            height: 100vh;
+            margin: 0 7px 0;
+        }
+        header {
+            background-color: rgb(255, 47, 0);
+            color: white;
+            text-align: center;
+            width: 450px;
+            align-content: center;
+            padding: 10px 0 10px;
+            margin: auto;
+            font-size: 12px;
+        }
+        .barraHorizontal {
+            width: 300px;
+            background-color: white;
+            margin: 5px auto 0;
+            height: 2px;
+        }
+        main {
+            background-color: white;
+            display: grid;
+            grid-template-rows: auto auto;
+            padding: 20px;
+        }
+        .producto {
+            background-color: rgb(235, 235, 235);
+            border: 1px solid rgba(128, 128, 128, 0.241);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .producto h2 {
+            color: orange;
+            margin: 10px 0 10px;
+            font-size: 20px;
+        }
+        .producto p {
+            font-size: 13px;
+            margin: 5px 0 5px;
+        }
+        .producto img {
+            height: 100px;
+        }
+        .producto a {
+            text-decoration: none;
+            color: #0077cc
+        }
+        footer {
+            color: white;
+            text-align: center;
+            font-size: 13px;
+            padding: 5px;
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Nuestra Landing Page de Comida</h1>
+        <hr class="barraHorizontal" />
+    </header>
+    <main>
+        <div class="producto">
+            <img src="img/burguer.jpg" alt="producto 1">
+            <h2>Producto 1</h2>
+            <p>Descripción del producto. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#">Ver más</a>
+        </div>
+        <div class="producto">
+            <img src="img/hamburguer.jpg" alt="producto 2">
+            <h2>Producto 2</h2>
+            <p>Descripción del producto. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#">Ver más</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Landing Page de Productos de Comida</p>
+    </footer>
+</body>
+</html>
