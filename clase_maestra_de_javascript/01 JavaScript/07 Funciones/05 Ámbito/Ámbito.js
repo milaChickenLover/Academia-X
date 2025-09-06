@@ -23,3 +23,5 @@ function ejemplo() {
 
 ejemplo();
 // console.log(numero);
+
+// PRO TIP 👉 Evita usar 'var' para declarar variables en JavaScript, ya que su alcance es global o de función entera, lo cual puede llevar a problemas de sobrescritura o acceso no intencionado. En cambio, utiliza 'let' que tiene un alcance de bloque, proporcionando un mayor control sobre dónde se puede acceder o modificar una variable.
